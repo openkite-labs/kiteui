@@ -7,4 +7,4 @@ export { Button } from './components/Button'
 export type { ButtonProps } from './components/Button'
 
 // Export types
-export * from './types'
+// All types are exported from their respective components
