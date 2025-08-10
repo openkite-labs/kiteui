@@ -4,6 +4,18 @@ export { Button } from "./components/Button";
 export type { ButtonProps } from "./components/Button";
 export { Input } from "./components/Input";
 export type { InputProps } from "./components/Input";
+export { Textarea, type TextareaProps } from "./components/Textarea";
+export { Avatar, type AvatarProps } from "./components/Avatar";
+export { 
+    Accordion, 
+    AccordionItem, 
+    AccordionTrigger, 
+    AccordionContent,
+    type AccordionProps,
+    type AccordionItemProps,
+    type AccordionTriggerProps,
+    type AccordionContentProps
+} from "./components/Accordion";
 export { FlexContainer } from "./components/FlexContainer";
 export type { FlexContainerProps } from "./components/FlexContainer";
 export { GridContainer } from "./components/GridContainer";
