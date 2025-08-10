@@ -4,6 +4,7 @@
 @source "./components";
 
 @theme {
+    /* Color Palette */
     --color-primary-50: #eaf3ff;
     --color-primary-100: #d9e8ff;
     --color-primary-200: #bad4ff;
@@ -27,4 +28,7 @@
     --color-secondary-800: #3e494e;
     --color-secondary-900: #374043;
     --color-secondary-950: #242a2d;
+
+    /* Base Border Radius - Customize this to change all radius values */
+    --radius-base: 0.375rem; /* 6px - Base radius that other radius values derive from */
 }
