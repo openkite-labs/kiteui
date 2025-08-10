@@ -9,9 +9,12 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@mdx-js/react": "^3.1.0",
+        "@mdx-js/rollup": "^3.1.0",
         "@openkite/kite-ui": "file:../ui",
         "react": "^18.3.1",
-        "react-dom": "^18.3.1"
+        "react-dom": "^18.3.1",
+        "react-router": "^7.8.0"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.1.11",

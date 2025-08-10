@@ -1,0 +1,91 @@
+import { Button, ButtonGroup } from '@openkite/kite-ui'
+
+# Buttons
+
+Interactive button components with multiple variants and states.
+
+## Button Variants
+
+Kite UI provides several button variants to match different use cases:
+
+<div className="flex flex-wrap gap-4 my-6">
+  <Button variant="primary">Primary Button</Button>
+  <Button variant="secondary">Secondary Button</Button>
+  <Button variant="outline">Outline Button</Button>
+  <Button variant="ghost">Ghost Button</Button>
+</div>
+
+### Usage
+
+```jsx
+import { Button } from '@openkite/kite-ui'
+
+<Button variant="primary">Primary Action</Button>
+<Button variant="secondary">Secondary Action</Button>
+<Button variant="outline">Outline Style</Button>
+<Button variant="ghost">Subtle Action</Button>
+```
+
+## Button States
+
+Buttons support different states including disabled:
+
+<div className="flex flex-wrap gap-4 my-6">
+  <Button variant="primary">Normal</Button>
+  <Button variant="primary" disabled>Disabled</Button>
+</div>
+
+## Button Groups
+
+Group related buttons together with ButtonGroup component.
+
+### Single Selection
+
+Allow users to select one option from a group:
+
+<div className="my-6">
+  <ButtonGroup type="single" defaultValue="left">
+    <ButtonGroup.Item value="left">Left</ButtonGroup.Item>
+    <ButtonGroup.Item value="center">Center</ButtonGroup.Item>
+    <ButtonGroup.Item value="right">Right</ButtonGroup.Item>
+  </ButtonGroup>
+</div>
+
+```jsx
+<ButtonGroup type="single" defaultValue="left">
+  <ButtonGroup.Item value="left">Left</ButtonGroup.Item>
+  <ButtonGroup.Item value="center">Center</ButtonGroup.Item>
+  <ButtonGroup.Item value="right">Right</ButtonGroup.Item>
+</ButtonGroup>
+```
+
+### Multiple Selection
+
+Allow users to select multiple options:
+
+<div className="my-6">
+  <ButtonGroup type="multiple" defaultValue={["bold", "italic"]}>
+    <ButtonGroup.Item value="bold">Bold</ButtonGroup.Item>
+    <ButtonGroup.Item value="italic">Italic</ButtonGroup.Item>
+    <ButtonGroup.Item value="underline">Underline</ButtonGroup.Item>
+    <ButtonGroup.Item value="strikethrough">Strike</ButtonGroup.Item>
+  </ButtonGroup>
+</div>
+
+```jsx
+<ButtonGroup type="multiple" defaultValue={["bold", "italic"]}>
+  <ButtonGroup.Item value="bold">Bold</ButtonGroup.Item>
+  <ButtonGroup.Item value="italic">Italic</ButtonGroup.Item>
+  <ButtonGroup.Item value="underline">Underline</ButtonGroup.Item>
+  <ButtonGroup.Item value="strikethrough">Strike</ButtonGroup.Item>
+</ButtonGroup>
+```
+
+## Best Practices
+
+- Use **primary** buttons for the main action on a page
+- Use **secondary** buttons for secondary actions
+- Use **outline** buttons when you need a lighter visual weight
+- Use **ghost** buttons for subtle actions or in dense interfaces
+- Group related actions using ButtonGroup
+- Always provide clear, action-oriented labels

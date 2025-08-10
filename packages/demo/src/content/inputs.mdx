@@ -1,0 +1,102 @@
+import { Input } from '@openkite/kite-ui'
+
+# Inputs
+
+Form input components with various types and states for collecting user data.
+
+## Basic Input
+
+The default input component for text entry:
+
+<div className="max-w-md space-y-4 my-6">
+  <Input placeholder="Enter your text here" />
+</div>
+
+```jsx
+import { Input } from '@openkite/kite-ui'
+
+<Input placeholder="Enter your text here" />
+```
+
+## Input Types
+
+Supports all standard HTML input types:
+
+<div className="max-w-md space-y-4 my-6">
+  <Input placeholder="Default text input" />
+  <Input placeholder="Email address" type="email" />
+  <Input placeholder="Password" type="password" />
+  <Input placeholder="Phone number" type="tel" />
+  <Input placeholder="Website URL" type="url" />
+  <Input placeholder="Search query" type="search" />
+</div>
+
+```jsx
+<Input placeholder="Email address" type="email" />
+<Input placeholder="Password" type="password" />
+<Input placeholder="Phone number" type="tel" />
+<Input placeholder="Website URL" type="url" />
+<Input placeholder="Search query" type="search" />
+```
+
+## Input States
+
+### Disabled State
+
+Disabled inputs prevent user interaction:
+
+<div className="max-w-md space-y-4 my-6">
+  <Input placeholder="This input is disabled" disabled />
+  <Input value="Read-only value" disabled />
+</div>
+
+```jsx
+<Input placeholder="This input is disabled" disabled />
+<Input value="Read-only value" disabled />
+```
+
+### With Default Values
+
+Inputs can have pre-filled values:
+
+<div className="max-w-md space-y-4 my-6">
+  <Input defaultValue="Pre-filled text" />
+  <Input value="Controlled value" onChange={() => {}} />
+</div>
+
+```jsx
+<Input defaultValue="Pre-filled text" />
+<Input value="Controlled value" onChange={handleChange} />
+```
+
+## Form Example
+
+Here's how inputs work together in a form:
+
+<div className="max-w-md space-y-4 p-6 border border-gray-200 rounded-lg bg-gray-50 my-6">
+  <h3 className="font-semibold mb-4">Contact Form</h3>
+  <Input placeholder="Full Name" />
+  <Input placeholder="Email Address" type="email" />
+  <Input placeholder="Phone Number" type="tel" />
+  <Input placeholder="Company" />
+  <div className="pt-2">
+    <button className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+      Submit
+    </button>
+  </div>
+</div>
+
+## Accessibility
+
+- All inputs support proper ARIA attributes
+- Keyboard navigation works as expected
+- Screen readers can properly identify input types
+- Focus states are clearly visible
+
+## Best Practices
+
+- Always provide clear placeholder text
+- Use appropriate input types for better mobile experience
+- Provide validation feedback when needed
+- Group related inputs logically
+- Consider using labels for better accessibility

@@ -1,0 +1,69 @@
+import { Button, Input, Heading, Text, Blockquote, ButtonGroup } from '@openkite/kite-ui'
+
+# Kite UI Component Library
+
+A modern, accessible React component library built with TypeScript and Tailwind CSS.
+
+## Features
+
+<div className="grid grid-cols-2 gap-6 my-8">
+  <div className="p-4 border border-gray-200 rounded-lg">
+    <h3 className="font-semibold mb-2">🎨 Design System</h3>
+    <p className="text-sm text-gray-600">Consistent design tokens and components</p>
+  </div>
+  <div className="p-4 border border-gray-200 rounded-lg">
+    <h3 className="font-semibold mb-2">♿ Accessible</h3>
+    <p className="text-sm text-gray-600">Built with accessibility in mind</p>
+  </div>
+  <div className="p-4 border border-gray-200 rounded-lg">
+    <h3 className="font-semibold mb-2">🔧 TypeScript</h3>
+    <p className="text-sm text-gray-600">Full TypeScript support</p>
+  </div>
+  <div className="p-4 border border-gray-200 rounded-lg">
+    <h3 className="font-semibold mb-2">📱 Responsive</h3>
+    <p className="text-sm text-gray-600">Mobile-first responsive design</p>
+  </div>
+</div>
+
+## Getting Started
+
+Install the package in your React project:
+
+```bash
+npm install @openkite/kite-ui
+```
+
+Import and use components:
+
+```jsx
+import { Button, Input, Heading } from '@openkite/kite-ui'
+
+function App() {
+  return (
+    <div>
+      <Heading size="1">Welcome</Heading>
+      <Button variant="primary">Get Started</Button>
+    </div>
+  )
+}
+```
+
+## Quick Example
+
+Here's a quick preview of what you can build:
+
+<div className="p-6 border border-gray-200 rounded-lg bg-gray-50 my-6">
+  <Heading size="3" className="mb-4">Sample Form</Heading>
+  <div className="space-y-4 max-w-md">
+    <Input placeholder="Enter your name" />
+    <Input placeholder="Enter your email" type="email" />
+    <div className="flex gap-2">
+      <Button variant="primary">Submit</Button>
+      <Button variant="outline">Cancel</Button>
+    </div>
+  </div>
+</div>
+
+---
+
+*Explore the components using the navigation menu to see detailed examples and usage patterns.*

@@ -1,0 +1,121 @@
+import { Heading, Text } from '@openkite/kite-ui'
+
+# Typography
+
+Typography components for creating clear content hierarchy and readable text.
+
+## Headings
+
+Heading components with semantic sizing from 1 (largest) to 6 (smallest):
+
+<div className="space-y-4 my-6">
+  <Heading size="1">Heading Size 1</Heading>
+  <Heading size="2">Heading Size 2</Heading>
+  <Heading size="3">Heading Size 3</Heading>
+  <Heading size="4">Heading Size 4</Heading>
+  <Heading size="5">Heading Size 5</Heading>
+  <Heading size="6">Heading Size 6</Heading>
+</div>
+
+```jsx
+import { Heading } from '@openkite/kite-ui'
+
+<Heading size="1">Main Page Title</Heading>
+<Heading size="2">Section Title</Heading>
+<Heading size="3">Subsection Title</Heading>
+<Heading size="4">Component Title</Heading>
+<Heading size="5">Small Heading</Heading>
+<Heading size="6">Smallest Heading</Heading>
+```
+
+## Text Components
+
+Text components for body content with different sizes and weights:
+
+<div className="space-y-4 my-6">
+  <Text size="lg">Large text for important content</Text>
+  <Text size="md">Medium text for regular content</Text>
+  <Text size="sm">Small text for secondary information</Text>
+  <Text size="xs">Extra small text for captions</Text>
+</div>
+
+```jsx
+import { Text } from '@openkite/kite-ui'
+
+<Text size="lg">Large text</Text>
+<Text size="md">Medium text</Text>
+<Text size="sm">Small text</Text>
+<Text size="xs">Extra small text</Text>
+```
+
+## Text Weights
+
+Control text weight for emphasis:
+
+<div className="space-y-2 my-6">
+  <Text weight="light">Light weight text</Text>
+  <Text weight="normal">Normal weight text</Text>
+  <Text weight="medium">Medium weight text</Text>
+  <Text weight="semibold">Semibold weight text</Text>
+  <Text weight="bold">Bold weight text</Text>
+</div>
+
+```jsx
+<Text weight="light">Light text</Text>
+<Text weight="normal">Normal text</Text>
+<Text weight="medium">Medium text</Text>
+<Text weight="semibold">Semibold text</Text>
+<Text weight="bold">Bold text</Text>
+```
+
+## Color Variants
+
+Text components support different color variants:
+
+<div className="space-y-2 my-6">
+  <Text color="default">Default text color</Text>
+  <Text color="muted">Muted text color</Text>
+  <Text color="primary">Primary text color</Text>
+  <Text color="success">Success text color</Text>
+  <Text color="warning">Warning text color</Text>
+  <Text color="error">Error text color</Text>
+</div>
+
+```jsx
+<Text color="default">Default text</Text>
+<Text color="muted">Muted text</Text>
+<Text color="primary">Primary text</Text>
+<Text color="success">Success text</Text>
+<Text color="warning">Warning text</Text>
+<Text color="error">Error text</Text>
+```
+
+## Content Example
+
+Here's how typography components work together:
+
+<div className="max-w-2xl my-8">
+  <Heading size="2">Article Title</Heading>
+  <Text color="muted" size="sm" className="mb-4">Published on March 15, 2024</Text>
+  
+  <Text size="lg" className="mb-4">
+    This is the article introduction with larger text to draw attention and provide context for the content that follows.
+  </Text>
+  
+  <Heading size="3" className="mb-3">Section Heading</Heading>
+  <Text className="mb-4">
+    Regular paragraph text that provides detailed information about the topic. This demonstrates how different typography components work together to create a clear content hierarchy.
+  </Text>
+  
+  <Text size="sm" color="muted">
+    This is a caption or note with smaller, muted text for less important information.
+  </Text>
+</div>
+
+## Best Practices
+
+- Use heading sizes to create clear content hierarchy
+- Maintain consistent spacing between typography elements
+- Use appropriate text sizes for readability
+- Apply color variants purposefully to convey meaning
+- Consider line height and spacing for optimal reading experience
